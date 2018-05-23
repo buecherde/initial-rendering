@@ -10,10 +10,10 @@ npm install initial-rendering
 
 ## Usage
 
-The library returns a json object with the results. All images are passed as optimized base64 encoded pngs. For image optimizing the lib [imagemin-pngquant](https://github.com/imagemin/imagemin-pngquant) is used.
+The library returns a json object with the results. All images are passed as optimized base64 encoded pngs. [imagemin-pngquant](https://github.com/imagemin/imagemin-pngquant) is used for optimizing the images.
 
 ```js
-const initialRendering = require('../lib/initialRendering');
+const initialRendering = require('initial-rendering');
 initialRendering({
 	url: 'https://foo.bar',
 	puppeteerOptions: {}, // optional
