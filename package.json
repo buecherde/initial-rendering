@@ -1,0 +1,32 @@
+{
+	"name": "initial-rendering",
+	"version": "0.0.1",
+	"description": "Use Chrome headless screenshots for comparing the initial rendering",
+	"keywords": [
+		"above the fold",
+		"above-the-fold",
+		"critical rendering",
+		"critical path"
+	],
+	"homepage": "https://github.com/buecherde/initial-rendering#readme",
+	"main": "index.js",
+	"scripts": {},
+	"author": {
+		"name": "Martin Wagner"
+	},
+	"license": "ISC",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/buecherde/initial-rendering.git"
+	},
+	"engines": {
+		"node": ">= 7.6.0"
+	},
+	"dependencies": {
+		"imagemin": "^5.3.1",
+		"imagemin-pngquant": "^5.1.0",
+		"pixelmatch": "^4.0.2",
+		"puppeteer": "^1.3.0"
+	},
+	"devDependencies": {}
+}

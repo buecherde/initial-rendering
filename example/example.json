@@ -1,0 +1,22 @@
+{
+	"execution": 1527064733409,
+	"url": "https://www.buecher.de",
+	"device": "Nexus 5X",
+	"width": 1082,
+	"height": 1922,
+	"full": "data:image/png;base64,abc",
+	"steps": [{
+		"name": "initial",
+		"numDiffPixels": 627364,
+		"ratio": 30.17,
+		"screenshot": "data:image/png;base64,abc",
+		"diff": "data:image/png;base64,abc"
+	}, {
+		"name": "no-assets",
+		"numDiffPixels": 295434,
+		"ratio": 14.21,
+		"screenshot": "data:image/png;base64,abc",
+		"diff": "data:image/png;base64,abc"
+	}],
+	"version": "0.0.1"
+}
