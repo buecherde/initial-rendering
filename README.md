@@ -10,7 +10,9 @@ npm install initial-rendering
 
 ## Usage
 
-The library returns a json object with the results. All images are passed as optimized base64 encoded pngs. [imagemin-pngquant](https://github.com/imagemin/imagemin-pngquant) is used for optimizing the images.
+The library returns a json object with the results. All images are passed as optimized base64 encoded pngs. 
+[imagemin-pngquant](https://github.com/imagemin/imagemin-pngquant) is used for optimizing the images.
+[pixelmatch](https://github.com/mapbox/pixelmatch) is used for comparing the images.
 
 ```js
 const initialRendering = require('initial-rendering');
@@ -36,6 +38,9 @@ Use Chrome headless screenshots for comparing the initial rendering and return a
     -   `options.url` **string** url (optional, default `false`)
     -   `options.device` **string** device name which is supported by chromium (optional, default `Nexus5X`)
     -   `options.puppeteerOptions` **object** additional options for puppeteer (optional, default `{}`)
+    -   `options.auth` **object** http authentication (optional, default `{}`)
+        -   `options.auth.username` **string** username
+        -   `options.auth.password` **string** password
 
 Returns **promise&lt;initialRenderingResult>**
 

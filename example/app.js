@@ -13,6 +13,10 @@ http.createServer(function(req, res) {
 			executablePath: '/usr/bin/chromium-browser' // I have to pass the executable cause of our docker environment
 		},
 		url,
+		auth: { // optional http auth
+			username: 'foo',
+			password: 'bar'
+		},
 		device: 'Nexus 5X'
 	}).then(data => {
 		res.writeHead(200, {'Content-Type': 'text/html'});
