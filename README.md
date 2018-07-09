@@ -41,6 +41,7 @@ Use Chrome headless screenshots for comparing the initial rendering and return a
     -   `options.auth` **object** http authentication (optional, default `{}`)
         -   `options.auth.username` **string** username
         -   `options.auth.password` **string** password
+    -   `options.returnScreenshots` **boolean** return screenshot as base64 image (optional, default `true`)
 
 Returns **promise&lt;initialRenderingResult>**
 
