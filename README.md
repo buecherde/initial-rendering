@@ -14,6 +14,8 @@ The library returns a json object with the results. All images are passed as opt
 [imagemin-pngquant](https://github.com/imagemin/imagemin-pngquant) is used for optimizing the images.
 [pixelmatch](https://github.com/mapbox/pixelmatch) is used for comparing the images.
 
+[Here](https://medium.com/@fry2k/a-library-to-monitor-above-the-fold-content-during-rendering-c1e4d87bc50b) I wroten an article at medium.com about the library.
+
 ```js
 const initialRendering = require('initial-rendering');
 initialRendering({
