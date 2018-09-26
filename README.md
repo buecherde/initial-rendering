@@ -19,7 +19,13 @@ const initialRendering = require('initial-rendering');
 initialRendering({
 	url: 'https://foo.bar',
 	puppeteerOptions: {}, // optional
-	device: 'Nexus 5X' // optional. default: Nexus 5X
+	device: 'Nexus 5X', // optional. default: Nexus 5X
+	returnScreenshots: true, // optional. default: true
+	waitFor: { // optional
+		1: 0, // optional. default: 0
+		2: 500, // optional. default: 0
+		3: 500 // optional. default: 0
+	}
 }).then(data => {
 	// handle result
 }).catch(err => {
@@ -42,6 +48,10 @@ Use Chrome headless screenshots for comparing the initial rendering and return a
         -   `options.auth.username` **string** username
         -   `options.auth.password` **string** password
     -   `options.returnScreenshots` **boolean** return screenshot as base64 image (optional, default `true`)
+    -   `options.waitFor` **object** waitFor n ms after each step (optional, default `{}`)
+        -   `options.waitFor.1` **number** delay after step 1
+        -   `options.waitFor.2` **number** delay after step 2
+        -   `options.waitFor.3` **number** delay after step 3
 
 Returns **promise&lt;initialRenderingResult>**
 

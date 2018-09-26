@@ -1,6 +1,6 @@
 {
 	"name": "initial-rendering",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "Use Chrome headless screenshots for comparing the initial rendering",
 	"keywords": [
 		"above the fold",

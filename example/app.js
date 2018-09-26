@@ -17,7 +17,13 @@ http.createServer(function(req, res) {
 			username: 'foo',
 			password: 'bar'
 		},
-		device: 'Nexus 5X'
+		device: 'Nexus 5X',
+		returnScreenshots: true, // optional
+		waitFor: { // optional
+			1: 0,
+			2: 1500,
+			3: 1500
+		}
 	}).then(data => {
 		res.writeHead(200, {'Content-Type': 'text/html'});
 		let html = `<html><head><title>initial rendering of ${url}</title><style type="text/css">img{max-width:100%;}</style></head><body>`;
